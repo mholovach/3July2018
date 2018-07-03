@@ -25,5 +25,13 @@ public class Main {
                         + "\n====>>>> New result i++ = " + i++
                         + "\n====>>>> New result ++i = " + ++i);
 //        System.out.println("\n====>>>> New result ++i = " + ++i);
+
+        if (k > j || k > i){
+            System.out.println("New result k > i = " + k +" > "+ i + "\n or " + k + " > " + j);
+        } else if (k == i){
+            System.out.println("New result k < i = " + k +" = "+ i);
+        } else {
+            System.out.println("New result k < i = " + k +" < "+ i);
+        }
     }
 }
