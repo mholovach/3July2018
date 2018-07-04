@@ -1,9 +1,11 @@
+
 /**
  * Created by student on 03.07.2018.
  */
 public class Main {
 
     public static void main(String[] args) {
+        Calculator calc = new Calculator();
         int i = 1;
         int j = 1;
         int k = 2;
@@ -33,5 +35,11 @@ public class Main {
         } else {
             System.out.println("New result k < i = " + k +" < "+ i);
         }
+        int res = 0;
+        res = calc.divideD(i, j);
+        if (res !=0){
+            System.out.println("divideD result = " + res);
+        }
     }
 }
+
