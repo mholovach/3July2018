@@ -1,5 +1,19 @@
 public class IfElseOperations {
+
+    public int printInt(int val) {
+        System.out.println(val);
+        return val;
+    }
+
+    protected String print(String value) {
+        System.out.println(value);
+        return value;
+    }
+
+
+
     public void ifElseMethod(String name, int age){
+        int age1 = 15;
         if (name == null || age <=0){
             System.out.println("underground");
         } else if (name == "Vasya" && age == 30) {
@@ -7,5 +21,12 @@ public class IfElseOperations {
         } else {
             System.out.println("gdfhdgf");
         }
+
+
+        int ageRes = (age1 == 20) ? printInt(20) : printInt(10);
+        String ageResult = (age1 == 20 || name == "Vasya") ? print("dd") : print("dd");
+
+
+
     }
 }
