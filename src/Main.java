@@ -52,8 +52,6 @@ public class Main {
         SwitchCaseOperations swcase = new SwitchCaseOperations();
         swcase.ageResult(12, "ggg");
     }
-
-
 }
 
 
