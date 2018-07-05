@@ -22,12 +22,14 @@ public class Calculator extends ArithmeticAbs {
 
     @Override
     public Integer multiplyM(int one, int two) {
+        int res = 0;
         if (one == 0 || two == 0) {
             System.out.println("zero");
         } else if (one != 0 || two != 0) {
-            System.out.println("multiplyM = " + (one * two));
+            res = one * two;
+            System.out.println("multiplyM = " + res);
         }
-        return null;
+        return res;
     }
 
     @Override
@@ -41,10 +43,10 @@ public class Calculator extends ArithmeticAbs {
         }
         return res;
     }
-
-
-    @Override
-    public String result(String res) {
-        return super.result(res);
-    }
+//
+//
+//    @Override
+//    public String result(String res) {
+//        return super.result(res);
+//    }
 }

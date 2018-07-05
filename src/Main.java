@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
+
         int i = 1;
         int j = 1;
         int k = 2;
@@ -39,10 +40,17 @@ public class Main {
 
 
         int res;
-        res = calc.divideD(i, j);
+        res = calc.divideD(i, j)
+            + calc.multiplyM(i, j)
+                * calc.multiplyM(i, j);
         {
             System.out.println("divideD result = " + res);
         }
+
+    IfElseOperations ifelse = new IfElseOperations();
+        ifelse.ifElseMethod("Vas", 5);
     }
+
 }
+
 
