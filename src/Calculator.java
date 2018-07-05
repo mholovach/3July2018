@@ -4,9 +4,8 @@ public class Calculator extends ArithmeticAbs {
     public Integer plusPlus(int one, int two) {
         if (one == 0 || two == 0) {
             System.out.println("zero " + one + " zero " + two + " = zero");
-        } else if (one != 0 || two != 0)
-        {
-            System.out.println( "plusPlus = " + (one + two));
+        } else if (one != 0 || two != 0) {
+            System.out.println("plusPlus = " + (one + two));
         }
         return null;
     }
@@ -15,9 +14,8 @@ public class Calculator extends ArithmeticAbs {
     public Integer minusMinus(int one, int two) {
         if (one == 0 || two == 0) {
             System.out.println("zero");
-        } else if (one != 0 || two != 0)
-        {
-            System.out.println( "minusMinus = " + (one - two));
+        } else if (one != 0 || two != 0) {
+            System.out.println("minusMinus = " + (one - two));
         }
         return null;
     }
@@ -26,24 +24,24 @@ public class Calculator extends ArithmeticAbs {
     public Integer multiplyM(int one, int two) {
         if (one == 0 || two == 0) {
             System.out.println("zero");
-        } else if (one != 0 || two != 0)
-        {
-            System.out.println( "multiplyM = " + (one * two));
+        } else if (one != 0 || two != 0) {
+            System.out.println("multiplyM = " + (one * two));
         }
         return null;
     }
 
     @Override
     public Integer divideD(int one, int two) {
+        int res = 0;
         if (one == 0 || two == 0) {
             System.out.println("zero");
-        } else if (one != 0 || two != 0)
-        {
-            System.out.println( "divideD = " + (one / two));
-
+        } else if (one != 0 || two != 0){
+            res = one / two;
+            System.out.println("divideD = " + res);
         }
-        return null;
+        return res;
     }
+
 
     @Override
     public String result(String res) {

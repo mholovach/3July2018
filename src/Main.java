@@ -35,9 +35,12 @@ public class Main {
         } else {
             System.out.println("New result k < i = " + k +" < "+ i);
         }
-        int res = 0;
+
+
+
+        int res;
         res = calc.divideD(i, j);
-        if (res !=0){
+        {
             System.out.println("divideD result = " + res);
         }
     }
