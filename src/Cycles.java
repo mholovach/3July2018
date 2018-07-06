@@ -1,4 +1,15 @@
 public class Cycles {
+    int id;
+    String name;
+
+    public Cycles() {
+    }
+
+    public Cycles(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public void whileCycles(int i) {
         System.out.println("while ");
         while (i <= 10) {

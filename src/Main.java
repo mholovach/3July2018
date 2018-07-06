@@ -1,4 +1,3 @@
-
 /**
  * Created by student on 03.07.2018.
  */
@@ -56,6 +55,10 @@ public class Main {
         Cycles cl = new Cycles();
         cl.whileCycles(0);
         cl.forCycles(1);
+
+
+        Cycles cly = new Cycles(10, "Nme");
+        cly.id = 10;
     }
 }
 
