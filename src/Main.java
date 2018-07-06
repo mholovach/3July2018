@@ -55,6 +55,7 @@ public class Main {
 
         Cycles cl = new Cycles();
         cl.whileCycles(0);
+        cl.forCycles(1);
     }
 }
 
