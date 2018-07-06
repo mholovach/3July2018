@@ -33,13 +33,16 @@ public class Cycles {
 
         int[] numbers = {1,2,3,4,5,6,7,8,9};
 
+        int n =0;
         for (int number : numbers) {
-            if (number ==5 ){
-                System.out.println("We found # " + number);
-            };
-            System.out.println(number);
-        }
+            if (number == 5) break;{
+                n++;
 
+                System.out.println("We found # " + number);
+
+            };
+            System.out.println(n);
+        }
     }
 }
 
