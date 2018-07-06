@@ -19,14 +19,12 @@ public class IfElseOperations {
         } else if (name == "Vasya" && age == 30) {
             System.out.println("Vasya");
         } else {
-            System.out.println("gdfhdgf");
+            System.out.println("else: not Vasya");
         }
 
 
         int ageRes = (age1 == 20) ? printInt(20) : printInt(10);
-        String ageResult = (age1 == 20 || name == "Vasya") ? print("dd") : print("dd");
-
-
+        String ageResult = (age1 == 20 || name == "Vasya") ? print("Vasya 20") : print("not detected");
 
     }
 }
