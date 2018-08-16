@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Created by student on 03.07.2018.
  */
@@ -7,6 +5,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+
+        String [] arr = new String[10];
+
+Redactor red = new Redactor();
+//red.read(arr, 3);
+
+red.update(arr, 5, "new val");
+
 //        Calculator calc = new Calculator();
 //
 //        int i = 1;
@@ -79,80 +86,115 @@ public class Main {
 //            arr.sum(array);
 //            System.out.println(arr.sum(array));
 //        }
+//
+//
+//        Scanner sc = new Scanner(System.in);
+////        String line;
+//////        int number;
+////        boolean b;
+////        String bye = "bye";
+////        String matches = "matches 1234567890";
+////
+////        System.out.println("Please enter your name: ");
+////
+////        line = sc.next();
+////        if (line.matches(".*\\d+.*")) {
+////            b = true;
+////        } else b = false;
+////
+////        if (b) {
+////            System.out.println("You are enter the name with numbers " + line);
+////        } else {
+////            System.out.println("You are enter the name is " + line);
+////        }
+////
+////        System.out.println("Please enter your phone #: ");
+////
+////        line = sc.next();
+////
+////        if (line.matches("\\d{10}")) {
+////            b = true;
+////        } else b = false;
+////
+////        if (b) {
+////            System.out.println("You are enter correct phone # " + line);
+////        } else {
+////            System.out.println("You are enter incorrect number " + line);
+////            System.out.println("Please enter the correct number");
+////            line = sc.next();
+////            if (line.matches("\\d{10}")) {
+////                b = true;
+////            } else b = false;
+////            if (b) {
+////                System.out.println("You are enter correct phone # " + line);
+////            } else {
+////                System.out.println("You are enter incorrect number " + line + "\n" + matches);
+////                System.out.println(bye);
+////            }
+////
+////
+//////        System.out.println("You are enter " + line);
+//////        int num;
+//////        System.out.println("Please enter your number: ");
+//////        num = sc.nextInt();
+//////        if (num == 0) {
+//////            System.out.println("You are enter " + num);
+//////        } else {
+//////            System.out.println("Good work" + num);
+//////        }
+//////
+//////        number = 0;
+//////        if (number >= 0){
+//////            b = true;
+//////        }
+//////        else b = false;
+//////
+//////        System.out.println("Please enter your number2: ");
+////////        number = sc.nextInt();
+////////        System.out.println("You are enter value " + number);
+////////        System.out.println("Please enter your number2 again: ");
+//////
+//////        number = sc.nextInt();
+//////        iff (b) {
+////            System.out.println("You are enter " + number);
+////        } else {
+////            System.out.println("You are enter text " + number);
 
-
-        Scanner sc = new Scanner(System.in);
-        String line;
-//        int number;
-        boolean b;
-        String bye = "bye";
-        String matches = "matches 1234567890";
-
-        System.out.println("Please enter your name: ");
-
-        line = sc.next();
-        if (line.matches(".*\\d+.*")) {
-            b = true;
-        } else b = false;
-
-        if (b) {
-            System.out.println("You are enter the name with numbers " + line);
-        } else {
-            System.out.println("You are enter the name is " + line);
-        }
-
-        System.out.println("Please enter your phone #: ");
-
-        line = sc.next();
-
-        if (line.matches("\\d{10}")) {
-            b = true;
-        } else b = false;
-
-        if (b) {
-            System.out.println("You are enter correct phone # " + line);
-        } else {
-            System.out.println("You are enter incorrect number " + line);
-            System.out.println("Please enter the correct number");
-            line = sc.next();
-            if (line.matches("\\d{10}")) {
-                b = true;
-            } else b = false;
-            if (b) {
-                System.out.println("You are enter correct phone # " + line);
-            } else {
-                System.out.println("You are enter incorrect number " + line + "\n" + matches);
-                System.out.println(bye);
-            }
-
-
-//        System.out.println("You are enter " + line);
-//        int num;
-//        System.out.println("Please enter your number: ");
-//        num = sc.nextInt();
-//        if (num == 0) {
-//            System.out.println("You are enter " + num);
-//        } else {
-//            System.out.println("Good work" + num);
+//
+//        NullCounter cou = new NullCounter();
+//        int counter;
+//        int [] arr = cou.fillArray(10);
+//        int [] arr1 = cou.fillArrayNew(20, 10);
+//        counter = cou.counterNullElements(arr1);
+//        System.out.println(" " + (counter));
+//
+//
+//        Integer max;
+//        max = cou.counterMaxElement(cou.fillArrayNew(5, 8));
+////        System.out.println("max value = " + max);
+//
+//        ArraysSort sort = new ArraysSort();
+//        int[] arr = {0,5,6,3,2,4,5,4,3,3,4,1};
+//        System.out.println();
+//
+//        arrNew = sort.sortArray(Arrays.toString(arr));
+////
+//
+////        cou.fillArrayNew(10, 3);
+//        for(int i=0; i < arr.length; i++)
+//        {
+//            Arrays.sort(arr);
 //        }
-//
-//        number = 0;
-//        if (number >= 0){
-//            b = true;
-//        }
-//        else b = false;
-//
-//        System.out.println("Please enter your number2: ");
-////        number = sc.nextInt();
-////        System.out.println("You are enter value " + number);
-////        System.out.println("Please enter your number2 again: ");
-//
-//        number = sc.nextInt();
-//        if (b) {
-//            System.out.println("You are enter " + number);
-//        } else {
-//            System.out.println("You are enter text " + number);
-        }
+////        sort.sortArray(cou.fillArray(10));
+//        System.out.println(Arrays.toString(arr) + "   sdsdfdsf" + "\njdfkjhf");
+
+
+
+
+
+
+
+
     }
 }
 
