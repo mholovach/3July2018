@@ -11,33 +11,41 @@ public class Redactor {
         return arr;
     }
 
-    public void read(String[] arr) {
-        for (String str : arr)
-            System.out.println(str + ", ");
+    public void read(String[] arr, int index, String val) {
+        for (int i = 0; i < arr.length; i++) {
+            if (i == index) {
+                arr[i] = val;
+                if (arr[i] != null) {
+                    System.out.println(arr[i] + ", ");
+                }
+            }
+        }
     }
 
     public void read(String[] arr, int index) {
-        if (index > arr.length - 1) {
-            System.out.println("No such index!!!");
+        if (index > arr.length - 1 || index >= 0) {
+            System.out.println("Value " + arr[index]);
         } else {
-            System.out.println("Value: " + arr[index]);
+            System.out.println("Value not applicaliable ");
         }
     }
 
-    public String[] update(String[] arr, int index, String val) {
-        for (int i = 0; i < arr.length; i++) {
-            if ( i == index ) {
-                arr[i] = val;
-            } else {
-                arr[i] = "test";
+
+        public String[] update (String[]arr,int index, String val){
+            for (int i = 0; i < arr.length; i++) {
+                if (i == index) {
+                    arr[i] = val;
+                } else {
+                    arr[i] = "test";
+                }
+                System.out.println("Value: " + arr[i]);
             }
-            System.out.println("Value: " + arr[i]);
+            return arr;
         }
-        return arr;
-    }
 
-    public String[] delete(String[] arr) {
-        return arr;
+        public String[] delete (String[]arr){
+            return arr;
+        }
     }
 
 //    Scanner sc = new Scanner(System.in);
@@ -122,5 +130,3 @@ public class Redactor {
 //            System.out.println("You are enter " + number);
 //        } else {
 //            System.out.println("You are enter text " + number);
-
-        }

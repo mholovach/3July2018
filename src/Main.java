@@ -6,13 +6,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+String newValue = "newName";
         String [] arr = new String[10];
 
 Redactor red = new Redactor();
-//red.read(arr, 3);
-
+red.read(arr, 3, "str");
 red.update(arr, 5, "new val");
+        red.read(arr, 5);
+        red.create(arr, "yyy");
+        red.update(arr, 1, newValue);
+
+        Menu m = new Menu();
+        m.mainMenu();
+
 
 //        Calculator calc = new Calculator();
 //
